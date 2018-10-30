@@ -406,7 +406,9 @@ function is_string2(o,e) {
 
 function validate_ssidchar(ch) {
     if (ch >= 32 && ch <= 126)
-        return true;
+      return true;
+    if (ch >= 0x4e00 && ch <= 0x9fa5)
+      return true;
     return false;
 }
 
@@ -863,7 +865,7 @@ function validate_portrange(o,v) {
             o.select();
             return false;
         }
-    } // wrong port 
+    } // wrong port
     else {
         if (prev == -2) {
             if (num == 65535) o.value = num;
