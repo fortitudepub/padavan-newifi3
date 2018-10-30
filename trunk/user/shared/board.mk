@@ -1,8 +1,9 @@
 ##################################################################
 # Board PID # Board Name       # PRODUCT # Note
 ##################################################################
-# RT-N56U   # ASUS RT-N56U     # RT3883  #
+# NEWIFI-D2 # LENOVO NEWIFI D2  # MT7621  #
 ##################################################################
 
-CFLAGS += -DBOARD_N56U -DVENDOR_ASUS
-BOARD_NUM_USB_PORTS=2
+# Must force use single mac mode.
+CFLAGS += -DBOARD_NEWIFID2 -DVENDOR_LENOVO
+BOARD_NUM_USB_PORTS=1

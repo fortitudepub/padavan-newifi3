@@ -5,5 +5,5 @@
 ##################################################################
 
 # Must force use single mac mode.
-CFLAGS += -DBOARD_NEWIFID2 -DVENDOR_LENOVO -DUSE_SINGLE_MAC
+CFLAGS += -DBOARD_NEWIFID2 -DVENDOR_LENOVO
 BOARD_NUM_USB_PORTS=1
